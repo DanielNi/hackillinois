@@ -5,7 +5,7 @@
   "description": "Our hackIllinois 2014 hack",
   "version": "0.1",
 
-  "browser_action": {
+  "page_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
