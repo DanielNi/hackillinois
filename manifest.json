@@ -4,15 +4,15 @@
   "name": "Untitled",
   "description": "This extension demonstrates a 'browser action' with kittens.",
   "version": "1.0",
-  {
-    "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'"
-  }
+
+  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
 
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
   "permissions": [
-    "https://secure.flickr.com/"
+    "tabs",
+    "http://*.facebook.com/*"
   ]
 }
