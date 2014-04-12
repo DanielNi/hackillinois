@@ -1,0 +1,45 @@
+body {
+  min-width: 357px;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+/*h1{
+  font-size: 20;
+  font-weight:lighter;
+  font-variant:small-caps;
+
+} 
+h2 {
+  font-weight:lighter;
+  font-style: italic;
+  font-size: 16px;
+  font-variant:small-caps;
+}
+
+p{
+  font-size: 14px;
+}
+table {
+  font-size:14px;
+
+}
+
+img {
+  margin: 5px;
+  border: 0px;
+  vertical-align: left;
+  width: 25px;
+  height: 25px;
+}
+
+table {
+  border-collapse:collapse;
+  text-align: left;
+  vertical-align: left;
+  margin-left: 110px;
+}*/
+
+.options {
+  text-align: right;
+}
