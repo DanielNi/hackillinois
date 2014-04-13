@@ -13,9 +13,16 @@
     "default_popup": "popup.html"
   },
 
+  // "background": {
+  //   "scripts": ["background.js"],
+  //   "persistent": false
+  // },
+
   "permissions": [
     "tabs",
+    "http://*.firebaseio.com/*",
+    "http://*.firebase.com/*",
     "http://*.facebook.com/*",
-    "https://graph.facebook.com/"
+    "https://graph.facebook.com/*"
   ]
 }

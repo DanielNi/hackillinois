@@ -1,6 +1,12 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('alertButton').addEventListener('click', onLoginButtonClicked);
+  logIn();
 });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   document.getElementById('alertButton').addEventListener('click', logIn());
+// });
 
 chrome.tabs.getSelected(null, function(tab) {
   document.getElementById('currentLink').innerHTML = tab.url;
