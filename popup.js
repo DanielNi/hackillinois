@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  alert("loaded");
   document.getElementById('alertButton').addEventListener('click', onLoginButtonClicked);
 });
 
@@ -20,30 +19,16 @@ if (localStorage.accessToken) {
   }
 }
 
-// var facebookAuth = new OAuth2('facebook', {
-//   client_id: '768415276511807',
-//   client_secret: '28e40d0bc03186cdfbd97552891f4a17',
-//   api_scope: 'basic_info'
-// });
 
-// facebookAuth.authorize(function() {
-//   var xhr = new XMLHttpRequest();
-//   xhr.onreadystatechange = function(event) {
-//     if (xhr.readyState == 4) {
-//       if(xhr.status == 200) {
-//         var parsed = JSON.parse(xhr.responseText);
-//         var html = '';
-//         parsed.data.forEach(function(item, index) {
-//           html += '<li>' + item.name + '</li>';
-//         });
-//         document.querySelector('#friends').innerHTML = html;
-//         return;
-//       } else {
-//         //request failure
-//       }
-//     }
-//   }
-// });
+
+function getUserPicURL(id) {
+  var str1 = "http://graph.facebook.com/";
+  var str2 = str1.concat(id);
+  var str3 = "/picture";
+  var str4 = str2.concat(str3);
+  return str4;
+}
+
 
 // xhr.open('GET', 'https://graph.facebook.com/me/picture', true);
 // xhr.setRequestHeader('Content-Type', 'application/json');
