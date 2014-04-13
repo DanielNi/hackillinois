@@ -17,13 +17,14 @@
     "default_popup": "popup.html"
   },
 
-  // "background": {
-  //   "scripts": ["background.js"],
-  //   "persistent": false
-  // },
+  "background": {
+    "scripts": ["event.js"],
+    "persistent": true
+  },
 
   "permissions": [
     "tabs",
+    "webNavigation",
     "http://*.firebaseio.com/*",
     "http://*.firebase.com/*",
     "http://*.facebook.com/*",

@@ -1,12 +1,26 @@
 
-
 document.addEventListener('DOMContentLoaded', function () {
-  logIn();
+    document.getElementById('login').addEventListener('click', function() {
+      alert("test");
+        var newURL = "http://localhost:8000/test.html";
+        chrome.tabs.create({ url : newURL});
+    });
+     
+      alert("testing");
+    
+    document.getElementById('addButton').addEventListener('click', function() {
+      alert("test");
+      add();
+    });  
 });
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   document.getElementById('alertButton').addEventListener('click', logIn());
-// });
+function add() {
+  alert("add");
+  chrome.tabs.query({active: true, lastFocusedWindow: true}, function(tab) {
+    var hashed = CryptoJS.MD5(tab[0].url);
+    ref.child(hashed).child(userid).set(tab.url);
+  });
+}
 
 chrome.tabs.getSelected(null, function(tab) {
   document.getElementById('currentLink').innerHTML = tab.url;

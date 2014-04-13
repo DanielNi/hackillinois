@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 <head>
+  <script type='text/javascript' src='/global.js'></script>
+
   <meta name="keywords" content="articles,read,friends,techcrunch,buzzfeed">
   <meta name="author" content="Braham, Bryan, Dan, Grant">
   <meta charset="UTF-8">
@@ -10,17 +12,15 @@
   	h1 { font-size: 2em }
   </style>
   <link rel="stylesheet" type="text/css" href="popup.css">
-  <script type="text/javascript" src="http://cdn.firebase.com/js/client/1.0.11/firebase.js"></script>
-  <script type='text/javascript' src='https://cdn.firebase.com/js/simple-login/1.3.2/firebase-simple-login.js'></script>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="popup.js"></script>
   <script src="event.js"></script>
+
 </head>
 <body>
 
 	<h1>weReader</h1>
-
-  <input type="image" id="alertButton" src="settings.png">
+	<button type="button" id="login">Log In</button>
+  <button type="button" id="addButton">Add to Reading List</button>
 
   <p id="friends">Friends who have also seen this:</p>
   
